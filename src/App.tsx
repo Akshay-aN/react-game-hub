@@ -1,7 +1,5 @@
-import { Grid, GridItem, Show } from "@chakra-ui/react";
-import "./App.css";
+import { Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
-import ColorModeSwitch from "./components/ColorModeSwitch";
 
 function App() {
   return (
@@ -11,18 +9,11 @@ function App() {
         lg: `"nav nav" "aside main"`,
       }}
     >
-      <Show when={true}>
-        <GridItem area="nav">
-          <NavBar></NavBar>
-          <ColorModeSwitch />
-        </GridItem>
-      </Show>
-      <GridItem area="aside" bg="gold">
-        Aside
+      <GridItem area="nav">
+        <NavBar />
       </GridItem>
-      <GridItem area="main" bg="dogerblue">
-        Main
-      </GridItem>
+      <GridItem area="aside">Aside</GridItem>
+      <GridItem area="main">Main</GridItem>
     </Grid>
   );
 }
