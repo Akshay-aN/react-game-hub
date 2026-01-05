@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { ChakraProvider, createSystem, defaultConfig } from "@chakra-ui/react";
 import App from "./App";
 import "./index.css";
+import theme from "./theme";
 
 const system = createSystem(defaultConfig);
 
