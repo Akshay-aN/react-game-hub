@@ -12,7 +12,7 @@ function ColorModeSwitch() {
     >
       <Switch.HiddenInput />
       <Switch.Control />
-      <Text>Dark Mode</Text>
+      <Text whiteSpace="nowrap">Dark Mode</Text>
     </Switch.Root>
   );
 }
